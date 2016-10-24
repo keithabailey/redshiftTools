@@ -59,7 +59,7 @@ rs_replace_table = function(
       queryDo(dbcon, sprintf("delete from %s", tableName))
 
       print("Copying data from S3 into Redshift")
-      print(sprintf("copy %s from 's3://%s/%s.' region '%s' csv gzip ignoreheader 1 emptyasnull credentials 'aws_access_key_id=%s;aws_secret_access_key=%s' dateformat 'auto' timeformat 'auto';",
+      print(sprintf("copy %s from 's3://%s/%s.' region '%s' csv gzip ignoreheader 1 emptyasnull credentials 'aws_access_key_id=;aws_secret_access_key=' dateformat 'auto' timeformat 'auto';",
                           tableName,
                           bucket,
                           prefix,
