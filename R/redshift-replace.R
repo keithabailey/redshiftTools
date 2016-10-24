@@ -87,7 +87,7 @@ rs_replace_table = function(
       return(FALSE)
   }, finally = {
     print("Deleting temporary files from S3 bucket")
-    #deletePrefix(prefix, bucket, split_files)
+    deletePrefix(prefix, bucket, split_files)
   })
 
   return (result)
