@@ -16,7 +16,7 @@ To install this package, you'll need to execute these commands:
     devtools::install_github("rstats-db/RPostgres")
     devtools::install_github("hadley/xml2")
     install.packages("aws.s3", repos = c(getOption("repos"), "http://cloudyr.github.io/drat"))
-    devtools::install_github("sicarul/redshiftTools")
+    devtools::install_github("keithabailey/redshiftTools")
 ```
 
 Usage
